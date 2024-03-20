@@ -1,1 +1,1 @@
-"Simple rotating galery."
+"Simple rotating galery with 3D eff."
