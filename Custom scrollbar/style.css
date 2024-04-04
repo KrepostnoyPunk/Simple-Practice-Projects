@@ -1,0 +1,11 @@
+::-webkit-scrollbar{
+    /* background-color: black; */
+    background-color: transparent;
+    width: 20px;
+}
+
+::-webkit-scrollbar-thumb{
+    /* background-color: yellowgreen; */
+    background: linear-gradient(yellowgreen, yellow);
+    border-radius: 10px;
+}
