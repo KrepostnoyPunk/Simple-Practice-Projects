@@ -1,1 +1,2 @@
-'New version of weather app'
+'New version of weather app.
+P.S. a bit fucked up by dragging images inside when uploaded completed version.'
