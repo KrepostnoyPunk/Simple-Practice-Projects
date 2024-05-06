@@ -1,0 +1,154 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+body{
+    height: 100vh;
+    background-color: rgb(25,25,25);
+    background-image: url(ghost-of-tsushima-katana-clouds-playstation-4-hd-wallpaper-08762d5860e0ec28c08cf10e4852b4fa.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.logo,
+.nav-item,
+.login-btn,
+.toggle-menu-btn{
+    color: aliceblue;
+}
+
+.nav-item a{
+    color: aliceblue;
+    transition: .3s all;
+}
+
+.nav-item a:hover{
+    color: orangered;
+}
+
+.header{
+    position: relative;
+    padding: 0 30px;
+}
+
+.navbar{
+    width: 100%;
+    height: 70px;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar .logo{
+    font-size: 20px;
+}
+
+.list {
+    display: flex;
+    gap: 2rem;
+}
+
+.nav-item{
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.login-btn{
+    border: 1px solid aliceblue;
+    font-size: 17px;
+    padding: 10px 40px;
+    border-radius: 20px;
+    transition: .3s all;
+}
+
+.login-btn:hover{
+    background-color: orangered;
+    border: none;
+    color: rgb(25,25,25);
+    scale: 1.05;
+}
+
+.login-btn:active{
+    scale: 0.95;
+}
+
+.toggle-menu-btn{
+    font-size: 20px;
+    cursor: pointer;
+    display: none;
+}
+
+.dropdown-menu{
+    display: none;
+    position: absolute;
+    top: 70px;
+    right: 40px;
+    height: 0;
+    width: 200px;
+    background-color: rgba(25,25,25, 0.4);
+    border-radius: 10px;
+    overflow: hidden;
+    transition: height .3s;
+}
+
+.dropdown-menu.open{
+    height: 240px;
+}
+
+.dropdown-menu li{
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.dropdown-menu.login-btn{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+section.hero{
+    height: calc(100vh - 70px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    color: aliceblue;
+}
+
+.hero h2{
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+/* MEDIA */
+@media (max-width:990px) {
+    .list,
+    .login-btn{
+        display: none;
+    }
+    .toggle-menu-btn{
+        display: block;
+    }
+    .dropdown-menu,
+    li .login-btn{
+        display: block;
+    }
+}
+
+@media (max-width: 576px) {
+    .dropdown-menu{
+        left: 40px;
+        width: unset;
+    }
+}
