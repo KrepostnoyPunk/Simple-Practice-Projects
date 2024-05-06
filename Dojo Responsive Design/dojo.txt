@@ -1,0 +1,1 @@
+'Used technologies: HTML, CSS (media), JS (classList.toggle).'
